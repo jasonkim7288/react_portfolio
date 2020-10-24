@@ -1,0 +1,71 @@
+@import '../App.scss';
+
+.text-explain {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tech-icons {
+  text-align: center;
+  font-size: 3em;
+  .fab, .fas {
+    margin: 10px;
+  }
+
+  .fa-html5:hover {
+    color: #dd4b25;
+    text-shadow: 0 0 15px #dd4b25;
+  }
+
+  .fa-css3-alt:hover {
+    color: #006cb4;
+    text-shadow: 0 0 15px #006cb4;
+  }
+
+  .fa-js-square:hover {
+    color: #f2972a;
+    text-shadow: 0 0 15px #f2972a;
+  }
+
+  .fa-java:hover {
+    color: #d70a16;
+    text-shadow: 0 0 15px #d70a16;
+  }
+
+  .fa-react:hover {
+    color: #00d1f7;
+    text-shadow: 0 0 15px #00d1f7;
+  }
+
+  .fa-node-js:hover {
+    color: #7fc728;
+    text-shadow: 0 0 15px #7fc728;
+  }
+
+  .fa-database:hover {
+    color: #0074be;
+    text-shadow: 0 0 15px #0074be;
+  }
+
+  .fa-gem {
+    transform: rotate(-45deg) translatey(10px);
+    &:hover {
+      color: red;
+      text-shadow: 0 0 15px #0077b5;
+    }
+  }
+
+  .fa-file-pdf {
+    color: #d51c00;
+    &:hover {
+      text-shadow: 0 0 15px #d51c00;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .tech-icons {
+    font-size: 4em;
+  }
+}

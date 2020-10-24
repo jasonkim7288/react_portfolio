@@ -39,14 +39,14 @@ aside {
     display: contents;
     #bg-big-word {
       font-size: calc(5rem + 10vw);
-      color: #4DA167;
+      color: #4E915D;
       margin-left: -0.16em;
       align-self: flex-end;
       grid-area: 2 / 1 / 3 / 3;
     }
 
     .fade-in-bg-big-word {
-      animation: bg-bigsized-word-effect 5s 1;
+      animation: bg-bigsized-word-effect 4s 1;
     }
 
     #bg-mid-word {
@@ -59,7 +59,7 @@ aside {
     }
 
     .fade-in-bg-mid-word {
-      animation: bg-midsized-word-effect 5s 1;
+      animation: bg-midsized-word-effect 4s 1;
     }
   }
 }

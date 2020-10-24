@@ -1,0 +1,55 @@
+@import '../App.scss';
+
+.project-list {
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 50px;
+    border: thick double #144999;
+    padding: 20px;
+    box-shadow: 0 0 15px #00d9ff;
+    border-radius: 5px;
+
+    .project-picture {
+      align-self: center;
+      margin: 20px auto;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .project-content {
+      font-size: 1.3em;
+      margin-top: 10px;
+      .links-icon {
+        margin-left: 8px;
+        transition: all 0.5s;
+        .fa-github {
+          color: #bc2a8d;
+          font-size: 1.3em;
+          transform: translateY(3px);
+          &:hover {
+            text-shadow: 0 0 15px #bc2a8d;
+          }
+        }
+        .fa-play-circle {
+          color: #00d9ff;
+          font-size: 1.3em;
+          transform: translateY(3px);
+          &:hover {
+            text-shadow: 0 0 15px #00d9ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    .project {
+      flex: 1 1 40%;
+    }
+  }
+}

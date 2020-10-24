@@ -1,10 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef, useEffect } from 'react';
+import { Link, useLocation} from 'react-router-dom';
 import '../stylesheets/MainMenu.scss';
 
-function MainMenu({location}) {
-
-  console.log('location:', location);
+function MainMenu() {
+  const nav = useRef(null);
+  const navMargin = useRef(null);
+  const location = useLocation();
+  console.log('location.pathname:', location.pathname);
 
   let menu = [
     {
@@ -29,15 +31,30 @@ function MainMenu({location}) {
     },
   ];
 
+  menu.find(item => item.path === location.pathname).isCurrent = true;
+
+  const handleResize = e => {
+    navMargin.current.style.height = nav.current.clientHeight + 'px';
+  }
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+  }, []);
+
   return (
-      <nav class="right-nav">
-        {menu.map(item =>
-          <div class="btn-wrapper">
-            <Link to={item.path} class={`menu-string ${item.isCurrent ? 'cur-category' : ''}`}>{item.label}</Link>
-            <div class="underscore"></div>
-          </div>
-        )}
-      </nav>
+    <nav>
+      <div id="right-nav" ref={nav}>
+        { menu.map(item =>
+            <div className="btn-wrapper" key={item.label}>
+              <Link to={item.path} className={`menu-string ${item.isCurrent ? 'cur-category' : ''}`}>{item.label}</Link>
+              <div className="underscore"></div>
+            </div>
+          )
+        }
+      </div>
+      <div ref={navMargin}></div>
+    </nav>
   );
 }
 

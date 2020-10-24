@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Caveat|Mitr&display=swap');
 
-$header-height: 100px;
+$header-height: 74px;
 $footer-height: 60px;
 $full-width: 100vw;
 $scroll-width: 17px;
@@ -47,15 +47,11 @@ body {
   color:$default-text-color;
 }
 
-.test {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: $screen-width;
+main {
+  margin-top: 50px;
 }
 
-.container {
+.container, .container-sm {
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -63,20 +59,24 @@ body {
   margin-left: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 @media (min-width: 576px) {
-  .container{
+  .container, .container-sm {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container, .container-sm {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container, .container-sm {
     max-width: 960px;
   }
 }
@@ -90,5 +90,19 @@ body {
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+
+.text-title {
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #7785ac;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .text-title {
+    font-size: 3em;
   }
 }

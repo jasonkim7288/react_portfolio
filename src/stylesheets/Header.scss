@@ -1,23 +1,19 @@
 @import '../App.scss';
 
-/* limit header width maximum 1400px */
-header {
+#header {
   position: fixed;
   top: 0;
+  width: 95vw;
+  text-align: center;
   z-index: 100;
-  width: 100%;
-}
-
-#title-top {
-  font-family: Caveat;
-  font-size: 35px;
-  margin-bottom: -0.6cm;
-  text-align: center;
-}
-
-#title-bottom {
-  font-family: Mitr;
-  font-size: 40px;
-  margin-bottom: -10px;
-  text-align: center;
+  #title-top {
+    font-family: Caveat;
+    font-size: 35px;
+    margin-bottom: -0.6cm;
+  }
+  #title-bottom {
+    font-family: Mitr;
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
 }
