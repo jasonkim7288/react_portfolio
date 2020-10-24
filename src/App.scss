@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Caveat|Mitr&display=swap');
+
+$header-height: 100px;
+$footer-height: 60px;
+$full-width: 100vw;
+$scroll-width: 17px;
+$screen-width: calc(#{$full-width} - #{$scroll-width});
+$screen-max-width: 95vw;
+$section-max-width: 1400px;
+$default-text-color: #c5cfdc;
+$skill-icon-font-size: 30px;
+$skill-icon-width: 28px;
+$skill-icon-height: 40px;
+$article-max-width: 680px;
+$bg-color: #06142f;
+$selected-color: #DBFF76;
+$icon-background-color: #DEC1FF;
+
+@media screen and (min-width: 576px) {
+  $title-height: 92px;
+  $skill-icon-font-size: 50px;
+  $skill-icon-width: 37.5px;
+  $skill-icon-height: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: $bg-color;
+  color: $default-text-color;
+  font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+
+}
+
+a {
+  text-decoration: none;
+  color: $default-text-color;
+}
+
+.bg-color {
+  background: $bg-color;
+}
+
+body {
+  color:$default-text-color;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: $screen-width;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

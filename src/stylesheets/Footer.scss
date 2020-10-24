@@ -1,0 +1,28 @@
+@import '../App.scss';
+
+footer {
+  font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  width: 100%;
+  text-align: center;
+  .links-icon {
+    i {
+      margin: 20px 15px;
+      transition: all 0.5s;
+    }
+    .fa-linkedin:hover {
+      color: #0077b5;
+      text-shadow: 0 0 15px #0077b5;
+    }
+    .fa-github:hover {
+      color: #bc2a8d;
+      text-shadow: 0 0 15px #bc2a8d;
+    }
+    .fa-twitter:hover {
+      color: #1da1f2;
+      text-shadow: 0 0 15px #1da1f2;
+    }
+  }
+}
