@@ -1,8 +1,11 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import BigWords from './BigWords';
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Contact | Jason's Portfolio";
+  }, []);
+
   return (
     <main>
       <BigWords bigWord="Mail" midWord="me"/>

@@ -1,8 +1,11 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 import projectList from '../data/projectList';
 
 function Projects() {
+  useEffect(() => {
+    document.title = "Projects | Jason's Portfolio";
+  }, []);
+
   return (
     <div className="container">
       <h1 className="text-title">Projects</h1>
