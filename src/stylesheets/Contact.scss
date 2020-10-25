@@ -1,5 +1,7 @@
 @import '../variables.scss';
 
+$contact-opacity: 0.90;
+
 .article-one-column {
   background: none;
 }
@@ -30,7 +32,7 @@ form {
   display: none;
   background: none;
   .fas:before {
-    opacity: 0.95;
+    opacity: $contact-opacity;
   }
 }
 
@@ -45,7 +47,7 @@ input, textarea {
   color: black;
   min-width: 0;
   width: 95vw;
-  opacity: 0.95;
+  opacity: $contact-opacity;
 }
 
 /* message should be larger */
@@ -64,7 +66,7 @@ form button {
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;
-  opacity: 0.95;
+  opacity: $contact-opacity;
 }
 
 /* larger input and text area for larger screen */
