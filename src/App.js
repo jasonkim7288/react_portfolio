@@ -1,5 +1,15 @@
 import React, { Fragment } from 'react';
 import './App.scss';
+import './stylesheets/Header.scss';
+import './stylesheets/MainMenu.scss';
+import './stylesheets/BigWords.scss';
+import './stylesheets/About.scss'
+import './stylesheets/TypeWriter.scss';
+import './stylesheets/Projects.scss';
+import './stylesheets/Contact.scss';
+
+import './stylesheets/Footer.scss';
+
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MainMenu from './components/MainMenu';

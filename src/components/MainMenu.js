@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { Link, useLocation} from 'react-router-dom';
-import '../stylesheets/MainMenu.scss';
 
 function MainMenu() {
   const nav = useRef(null);
@@ -43,7 +42,7 @@ function MainMenu() {
   }, []);
 
   return (
-    <nav>
+    <nav className="bg-color">
       <div id="right-nav" ref={nav}>
         { menu.map(item =>
             <div className="btn-wrapper" key={item.label}>

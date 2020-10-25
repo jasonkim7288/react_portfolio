@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Caveat|Mitr&display=swap');
-
-$header-height: 74px;
-$footer-height: 60px;
-$full-width: 100vw;
-$scroll-width: 17px;
-$screen-width: calc(#{$full-width} - #{$scroll-width});
-$screen-max-width: 95vw;
-$section-max-width: 1400px;
-$default-text-color: #c5cfdc;
-$skill-icon-font-size: 30px;
-$skill-icon-width: 28px;
-$skill-icon-height: 40px;
-$article-max-width: 680px;
-$bg-color: #06142f;
-$selected-color: #DBFF76;
-$icon-background-color: #DEC1FF;
-
-@media screen and (min-width: 576px) {
-  $title-height: 92px;
-  $skill-icon-font-size: 50px;
-  $skill-icon-width: 37.5px;
-  $skill-icon-height: 70px;
-}
+@import './variables.scss';
 
 * {
   padding: 0;
@@ -31,7 +9,6 @@ $icon-background-color: #DEC1FF;
   color: $default-text-color;
   font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
-
 }
 
 a {
@@ -48,7 +25,8 @@ body {
 }
 
 main {
-  margin-top: 50px;
+  width: 100%;
+  background-color: $bg-color;
 }
 
 .container, .container-sm {
@@ -95,10 +73,12 @@ main {
 
 .text-title {
   font-size: 2em;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   color: #7785ac;
   text-align: center;
+  background: none;
+  opacity: 0.95;
 }
 
 @media (min-width: 992px) {

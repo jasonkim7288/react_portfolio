@@ -1,15 +1,13 @@
 import React from 'react'
 
-import '../stylesheets/BigWords.scss';
-
-function BigWords() {
+function BigWords({ bigWord, midWord }) {
   return (
-    <aside>
+    <aside  className="bg-color">
       <h2>
-        <span id="bg-big-word" className="fade-in-bg-big-word">Web</span>
+        <span id="bg-big-word" className="fade-in-bg-big-word">{bigWord}</span>
       </h2>
       <h2>
-        <span id="bg-mid-word" className="fade-in-bg-mid-word">Dev.</span>
+        <span id="bg-mid-word" className="fade-in-bg-mid-word">{midWord}</span>
       </h2>
     </aside>
   );

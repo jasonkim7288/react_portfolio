@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import '../variables.scss';
 
 /* define animation for background big words effects  */
 @keyframes bg-bigsized-word-effect {
@@ -33,7 +33,6 @@ aside {
   grid-template-columns: minmax(10vw, 30vw) max-content;
   grid-template-rows: 1fr min-content 2em $footer-height;
   height: calc(100vh - #{$header-height} - #{$footer-height});
-  z-index: -1;
   h2 {
     letter-spacing: -0.04em;
     display: contents;

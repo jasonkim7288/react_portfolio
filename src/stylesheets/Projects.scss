@@ -1,5 +1,3 @@
-@import '../App.scss';
-
 .project-list {
   .project {
     display: flex;
@@ -13,7 +11,7 @@
     .project-picture {
       align-self: center;
       margin: 20px auto;
-      max-width: 500px;
+      max-width: 400px;
       width: 100%;
     }
 
@@ -40,6 +38,10 @@
           }
         }
       }
+    }
+
+    .project-desc {
+      font-size: 1.1em;
     }
   }
 }

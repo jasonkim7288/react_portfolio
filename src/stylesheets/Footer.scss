@@ -1,5 +1,3 @@
-@import '../App.scss';
-
 #footer {
   font-size: 2em;
   position: fixed;
@@ -25,4 +23,8 @@
       text-shadow: 0 0 15px #1da1f2;
     }
   }
+}
+
+#footer-margin {
+  background: #00000000;
 }

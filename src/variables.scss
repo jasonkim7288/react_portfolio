@@ -1,0 +1,14 @@
+$header-height: 74px;
+$footer-height: 60px;
+$full-width: 100vw;
+$scroll-width: 17px;
+$screen-width: calc(#{$full-width} - #{$scroll-width});
+$screen-max-width: 95vw;
+$section-max-width: 1400px;
+$default-text-color: #c5cfdc;
+$bg-color: #06142f;
+$selected-color: #DBFF76;
+
+@media screen and (min-width: 576px) {
+  $title-height: 92px;
+}

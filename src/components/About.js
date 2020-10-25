@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../stylesheets/About.scss'
-
 function About() {
   return (
     <div className="container-sm">
@@ -28,7 +26,7 @@ function About() {
 
       <div className="tech-icons">
         <a href={process.env.PUBLIC_URL + '/Jason_Kim_Resume.pdf'} rel="noopener noreferrer" target="_blank" >
-          <i class="far fa-file-pdf"></i>
+          <i className="far fa-file-pdf"></i>
         </a>
       </div>
     </div>
