@@ -8,7 +8,10 @@ function MainMenu() {
   const location = useLocation();
   console.log('location.pathname:', location.pathname);
 
-  MENU.find(item => item.path === location.pathname).isCurrent = true;
+  // MENU.find(item => item.path === location.pathname).isCurrent = true;
+  MENU.forEach(item => {
+    item.isCurrent = item.path === location.pathname ? true : false;
+  });
 
   const handleResize = e => {
     navMargin.current.style.height = nav.current.clientHeight + 'px';
