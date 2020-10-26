@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
+import MENU from '../data/menu'
 
 function BurgerMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClick = e => {
+    console.log('handleClick');
+    setIsOpen(false);
+  };
+
+  const handleStateChange = e => {
+    setIsOpen(e.isOpen);
+  }
+
   return (
     <div id="burger-display">
-    <Menu right width={ '280px' } disableAutoFocus>
-      <Link to="/" id="home" className="menu-item">Home</Link>
-      <Link to="/about" id="about" className="menu-item">About</Link>
-      <Link to="/projects" id="projects" className="menu-item">Projects</Link>
-      <Link to="/contact" id="contact" className="menu-item">Contact</Link>
+    <Menu isOpen={isOpen} onStateChange={handleStateChange} right width={ '280px' } disableAutoFocus>
+      { MENU.map(item =>
+          <div key={item.id}>
+          <Link to={item.path} id={item.id} className="menu-item" onClick={handleClick}>{item.label}</Link>
+          {/* <a href={item.path} className="menu-item" onClick={handleClick}>{item.label}</a> */}
+          </div>
+        )
+      }
     </Menu>
     </div>
   )
