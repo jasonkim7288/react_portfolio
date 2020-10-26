@@ -29,7 +29,7 @@ function About() {
       <h1 className="text-title">Download CV</h1>
 
       <div className="tech-icons">
-        <a href={process.env.PUBLIC_URL + '/Jason_Kim_Resume.pdf'} rel="noopener noreferrer" target="_blank" >
+        <a href='https://whereever-s3-bucket.s3-ap-southeast-2.amazonaws.com/Jason+Kim+Resume.pdf' rel="noopener noreferrer" target="_blank" >
           <i className="far fa-file-pdf"></i>
         </a>
       </div>
