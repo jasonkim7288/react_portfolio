@@ -1,5 +1,13 @@
 const projectList = [
   {
+    title: 'Online Garden Shed',
+    desc: 'Online Garden Shed is for improving your gardening skills by keeping track of a plant\'s growth history and learning from other gardeners\' experiences. It also provides a way for gardeners to be a part of a much bigger community by bringing their records and experiences online. By having access to the online garden sheds and setting up notifications, gardeners can be more actively involved in their gardening community not restricted by their location.',
+    techStack: 'ReactJS, ExpressJS, Mongo DB, AWS S3 Bucket, react-google-login, Netlify, Heroku',
+    deploy: 'https://onlinegardenshed.netlify.app/',
+    git: 'https://github.com/jasonkim7288/mern_online_garden_shed_client',
+    picture: `${process.env.PUBLIC_URL + '/images/online_garden_shed.png'}`
+  },
+  {
     title: 'OK Jason!',
     desc: '"OK Jason!" app is a voice recognition web application that can answer various questions such as weather, wikipedia, map location, covid-19 statistics, dad jokes, some decorations on the page, etc. All the questions are received with the voice recognition and the answers are spoken by TTS(Text To Speech) and also displayed.',
     techStack: 'ReactJS, Google Maps API, AWS S3 Bucket, ExpressJS, chartjs, Netlify, Heroku',
