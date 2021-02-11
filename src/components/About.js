@@ -9,7 +9,7 @@ function About() {
     <div className="container-sm">
       <h1 className="text-title">About me</h1>
       <p className = "text-explain">I am a full stack developer who loves coding, problem solving, and communicating.</p>
-      <p className = "text-explain">I am currently studying web development and agile methodology at Coder Academy. Previousely I had
+      <p className = "text-explain">I recently graduated from Coder Academy. Previousely I had
         worked at LG Electronics as an IOT software developer and mobile phone software developer.</p>
 
       <h1 className="text-title">Skills</h1>
